@@ -12,6 +12,7 @@ import com.madesubs.core.ui.MovieAdapter
 import com.madesubs.myapplication.R
 import com.madesubs.myapplication.databinding.FragmentHomeBinding
 import com.madesubs.myapplication.detail.DetailActivity
+import org.koin.android.ext.android.bind
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
@@ -49,6 +50,7 @@ class HomeFragment : Fragment() {
                         is Resource.Error -> {
                             binding.progressBar.visibility = View.GONE
                             binding.viewError.root.visibility = View.VISIBLE
+                            binding.viewError.lottiAnimation.setAnimation("")
                             binding.viewError.tvError.text =
                                 movie.message ?: getString(R.string.something_wrong)
                         }
