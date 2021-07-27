@@ -3,14 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:background="@color/blue"
-    android:padding="@dimen/layout_margin">
+    android:layout_height="120dp">
 
     <ImageView
         android:id="@+id/iv_detail_backdrop"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
         android:src="@drawable/logo_themovidb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
