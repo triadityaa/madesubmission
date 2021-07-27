@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.madesubs.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".MyApplication"
         android:allowBackup="false"
@@ -12,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".detail.DetailActivity"
             android:label="@string/title_activity_detail"
@@ -20,7 +19,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.madesubs.myapplication.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,5 +27,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

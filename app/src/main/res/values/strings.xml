@@ -26,4 +26,5 @@
     <string name="release_date">Release Date: </string>
     <string name="title_favorite">Favorite</string>
     <string name="title_favorites">Module Title</string>
+    <string name="splash">splash</string>
 </resources>
